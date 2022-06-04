@@ -1,362 +1,274 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildin'</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script>
-</head>
-<!-- navbar goes here -->
-<nav class="bg-gradient-to-b from-black via-black w-full fixed h-1/6 navbar">
-  <div class="w-full mx-auto px-4">
-    <div class="flex justify-between">
+<!DOCTYPE HTML> 
+<html lang="en-US">
+    <head>
+        <title>Wildin'</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by Colorlib" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="Colorlib" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-      <div class="flex space-x-4">
-        <div>
-          <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
-            <img src="img/logo.png" alt="logo" class="h-10 w-20 mr-1 flex left-0">
-          </a>
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+        <link rel="stylesheet" type="text/css"  href='css/common.css' />
+        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+        <link rel="stylesheet" type="text/css"  href='css/prettyPhoto.css' />
+        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- Preloader Gif -->
+        <table class="doc-loader">
+            <tr>
+                <td>
+                    <img src="demo-images/icon_clear.png" alt="Loading..." />
+                </td>
+            </tr>
+        </table>
+
+        <!-- Menu -->
+        <div class="menu-wrapper center-relative">
+            <nav id="header-main-menu">
+                <div class="mob-menu">MENU</div>
+                <ul class="main-menu sm sm-clean">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
 
-      <div class="hidden md:flex items-center space-x-1">
-        <a href="javascript:scroll('home');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Home</a>
-        <a href="javascript:scroll('gallery');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Gallery</a>
-        <a href="javascript:scroll('shop');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Shop</a>
-        <a href="javascript:scroll('blog');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Blog</a>
-        <a href="javascript:scroll('contact');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Contact Us</a>
-      </div>
-      <div class="md:hidden flex items-center">
-        <button class="mobile-menu-button" onclick="toggle_visibility('mobile-menu')">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div class="mobile-menu w-1/2 hidden bg-black" id="mobile-menu">
-    <a href="javascript:scroll('home');" class="block py-2 px-4 text-lg" onlick="">Home</a>
-    <a href="javascript:scroll('gallery');" class="block py-2 px-4 text-lg">Gallery</a>
-    <a href="javascript:scroll('shop');" class="block py-2 px-4 text-lg">Shop</a>
-    <a href="javascript:scroll('blog');" class="block py-2 px-4 text-lg">Blog</a>
-    <a href="javascript:scroll('contact');" class="block py-2 px-4 text-lg">Contact Us</a>
-  </div>
-</nav>
-<body class="bg-black text-white">
-<div class="py-32 homepage" id="home">
-  <h2 class="text-shadow font-extrabold text-4xl md:text-7xl text-center md:text-left p-10 hero-title">The Fusion of Visual <br>and Performance Art</h2>
-  <p class="text-shadow text-xl w-full md:w-1/3 text-center md:text-left p-5 md:p-10 hero-text">Wildin' is a show that is made by artists and for artists that are coming from parallel genres, but having their own individual flavour. We wish to present visual and performing arts through a new perspective and to give budding artists a platform to showcase their talent, in front of a live audience.
-  <br>
-  <br>
-  <button class="bg-yellow-600 hover:bg-yellow-900 text-white py-2 px-4 rounded text-center" onclick="window.location.href='https://www.instagram.com/wildin.co_/'">
-      Know More
-  </button>
-  </p>
-  <img class="hero-image flex invisible md:visible" src="img/hero.png" />
-  <br>
-  <br>
-</div>
-<!-- Homepage Ends Here -->
 
-<!-- Gallery Starts Here-->
-<div class="gallery-wrapper" id="gallery">
-    <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Gallery.</h2>
-</div>
-<div class="flex overflow-x-auto space-x-8 gallery-images-wrapper">
-  <section class="flex-shrink-0 ">
-    <span><img src="img/gallery/1.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
-  </section>
-  <section class="flex-shrink-0 ">
-    <span><img src="img/gallery/2.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
-  </section>
-  <section class="flex-shrink-0 ">
-    <span><img src="img/gallery/3.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
-    
-  </section>
-  <section class="flex-shrink-0 ">
-    <span><img src="img/gallery/4.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
-    
-  </section>
-  <section class="flex-shrink-0 ">
-    <span><img src="img/gallery/5.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
-    
-  </section>
-  <section class="flex-shrink-0 ">
-    <span><img src="img/gallery/6.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
-</section>
-</div>
-<!-- Gallery Ends Here -->
+        <!-- Home -->
 
-<!-- Shop Starts Here -->
-  <div class="shop-wrapper" id="shop">
-    <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Shop.</h2>
-    <div class="flex flex-wrap justify-between">
-      <div class="shop-item-wrapper px-2">
-        <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
-        <p class="text-center">A small description</p>
-        <img src="img/shop/0001.png" class="shop-image" alt="" />
-      </div>
-      <div class="shop-item-wrapper px-2">
-        <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
-        <p class="text-center">A small description</p>
-        <img src="img/shop/0001.png" class="shop-image" alt="" />
-      </div>
-    <div class="shop-item-wrapper px-2">
-      <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
-      <p class="text-center">A small description</p>
-      <img src="img/shop/0001.png" class="shop-image" alt="" />
-    </div>
-  <div class="shop-item-wrapper px-2">
-    <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
-    <p class="text-center">A small description</p>
-    <img src="img/shop/0001.png" class="shop-image" alt="" />
-  </div>
+        <div id="home" class="section intro-page">
+            <div class="block content-1170 center-relative center-text">
+                <img class="top-logo" src="demo-images/logo.png" alt="Boxus" />
+                <br>
+                <h1 class="big-title">Fusion of Visual And <span>Performance Art</span></h1>
+                <p class="title-desc">Presenting visual and performing arts through a new perspective</p>
+            </div>
+        </div>
+        
+        <!-- Portfolio -->
+        <div id="portfolio" class="section">
+            <div class="block content-1170 center-relative">
+                <div class="section-title-holder right">
+                    <div class="section-num">
+                        <span>01</span>
+                    </div>
+                    <h2 class="entry-title">Gallery</h2>
+                </div>
+                <div class="section-content-holder portfolio-holder left">
+                    <div class="grid" id="portfolio-grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item element-item p_one">
+                                <img src="demo-images/portfolio_item_01.jpg" alt="">
+                        </div>
+                        <div class="grid-item element-item p_one_half">
+                                <img src="demo-images/portfolio_item_02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="grid-item element-item p_one_half">
+                                <img src="demo-images/portfolio_item_08.jpg" alt="">                            </a>
+                        </div>
+                        <div class="grid-item element-item p_one">
+                                <img src="demo-images/portfolio_item_05.jpg" alt="">
+                        </div>
+                    </div>
 
-    </div>
-  </div>
-<!-- Shop Ends Here-->
-<!-- Artists Starts Here -->
-<div class="artists-wrapper">
-  <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Meet The Founder.</h2>
-  <div class="artist-portfolio-wrapper">
-    <div class="md:flex md:inline-flex">
-      <div class="artist-left-wrapper w-full md:w-1/3 grid place-items-center">
-        <h3 class="artist-name text-center font-extrabold text-4xl md:text-3xl md:py-10">Stitch</h3>
-        <!-- <p class="artist-description text-center p-5 md:p-0">A small description</p> -->
-        <img src="img/stitch.jpeg" class="artist-image " alt="" />
-        <!-- <div class="artist-socials px-5 py-10">
-          <img src="img/artist/facebook.png" class="artist-facebook flex inline-flex" alt="" />
-          <img src="img/artist/youtube.png" class="artist-youtube flex inline-flex" alt="" />
-          <img src="img/artist/twitter.png" class="artist-twitter flex inline-flex" alt="" />  
-        </div> -->
-    </div>
-      <p class="artist-blog flex inline-flex text-justify">
-        A person with strong experience in streaming strategy and promotions. Working with a lot of influencers and curators across streaming platforms. Working with artists, labels, and managers An individual with an unresting passion for music and artist development, whose goal is to bring fans and the industry together. Has a vast music industry network with a couple of years of operating professionalism. I'm a little bit of pop and a whole lot of Indian HipHop. Started my own event management firm 'WILDIN' last year, and curated two successful interdisciplinary art shows.       
-      </p>
-    </div>
-  </div>
-  <br>
-<!-- Artists Ends Here -->
-<!-- Blog Starts Here -->
-<div class="blog-wrapper" id="blog">
-  <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Blog.</h2>
-  <div class="blog-posts-wrapper">
-    <br>
-    <div class="blog-post-wrapper">
-      <div class="blog-post-content-wrapper">
-        <h3 class="blog-post-title font-extrabold text-2xl md:text-3xl">Wildin' 3.0</h3>
-        <p class="blog-post-content text-justify">
-          The third installment of Wildin was a milestone event as it is one of the biggest Hip-Hop events to happen in Delhi post-lockdown. 
+                    <div class="clear"></div>
+                    <!-- <div class="block portfolio-load-more-holder">
+                        <a target="_self" class="more-posts">LOAD MORE</a>
+                        <img src="images/icon_infinity.svg" alt="Load more">
+                    </div>
+                </div> -->
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
 
-As the world opens up and starts getting back to the old groove, events and artists have returned to take back the nights. Wildin was an attempt to do the same and was a successful one too as more than 250 people showed up. Almost 90% of the tickets were sold in the early-bird booking phase and little to no booking slots were available on the day of the event.
 
-The audience that turned up was impressive as well, given how versatile they were. The event hosted rap performances, rap battles, beatboxing battles, and pop-up stalls. Artists from Mumbai, Delhi, and Jamshedpur came together to make this event an absolute blast.
+        <!-- About -->
+        <div id="about" class="section">
+            <div class="block content-1170 center-relative">
+                <div class="section-title-holder left">
+                    <div class="section-num">
+                        <span>02</span>
+                    </div>
+                    <h2 class="entry-title">ABOUT</h2>
+                </div>
+                <div class="section-content-holder right">
+                    <div class="content-wrapper">
+                        <div class="content-title-holder">
+                            <p class="content-title">About</p>
+                        </div>
+                        <div class="one_half ">
+                            Wildin' is a show that is made by artists and for artists that are coming from parallel genres, but having their own individual flavour. We wish to present visual and performing arts through a new perspective and to give budding artists a platform to showcase their talent, in front of a live audience.
+                        </div>
+                        <div class="one_half last ">
+                            <span style="color: #e54b76;"><strong>4 Nov 2021 ·</strong></span> <span style="color:#727190;"><em>Wildin’ 1 at Let’s bunk poshtel</em></span><br>
+                            <span style="color: #e54b76;"><strong>18 Dec 2021 ·</strong></span> <span style="color:#727190;"><em>Wildin’ 2 at Raasta</em></span><br>
+                            <span style="color: #e54b76;"><strong>10 April 2021 ·</strong></span> <span style="color:#727190;"><em>Wildin’ 3 at Raasta</em></span><br>
+                            <!-- <span style="color: #e54b76;"><strong>2010-2013 ·</strong></span> <span style="color:#727190;"><em>Studio Labore Tempor</em></span><br>
+                            <span style="color: #e54b76;"><strong>2013-2016 ·</strong></span> <span style="color:#727190;"><em>Magna Ipsum Amet</em></span><br> -->
+                        </div><div class="clear"></div>
+                        <br>
+                        <br>
+                    </div>
 
-From the breathtaking rap battles to amazing performances and beautiful art that was up for sale, this is probably the first time in Delhi where such different artists joined hands to create this one-of-a-kind experience. While the stalls has people buying art, getting tattoos, and clicking photos, the rap performances had them jumping and grooving . Young kings of Indian Hip-Hop like Gravity, Siege, Farhan, and D-cypher owned the night were their on-stage presence and songs that left the audience wanting for more. On the other hand, visual artists like Sharon, Ramaa, and Vishaka had people lining up at their stalls. 
+                    <div class="full-width ">
+                        <script>
+                            var aboutImage_speed = "500";
+                            var aboutImage_auto = "false";
+                            var aboutImage_hover = "true";
+                        </script>
+                        <div class="image-slider-wrapper relative img aboutImage">
+                            <a id="aboutImage_next" class="image_slider_next" href="#"></a>
+                            <div class="caroufredsel_wrapper">
+                                <ul id="aboutImage" class="image-slider slides">
+                                    <li><img src="demo-images/about_img_04.jpg" alt=""></li>
+                                    <li><img src="demo-images/about_img_05.jpg" alt=""></li>
+                                    <li><img src="demo-images/about_img_06.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
 
-The beatboxing and rap battles were a whole different story in themselves. The audience went from focusing intensely on the build-ups to screaming and cheering on drops and punchlines. Rapture, the battle rap veteran from Mumbai showed how experience and delivery can woo the audience regardless of the city you step in. Dzire, the battle rap prodigy from Jamshedpur was the highlight of the event as she made her mark in the capital city and proved that she is a force to be reckoned with.
+                        <script>
+                            var team1_speed = "500";
+                            var team1_auto = "false";
+                            var team1_hover = "true";
+                        </script>
+                        <div class="image-slider-wrapper relative team team1">
+                            <a id="team1_next" class="image_slider_next" href="#"></a>
+                            <div class="caroufredsel_wrapper">
+                                <ul id="team1" class="image-slider slides">
+                                    <li>
+                                        <div class="member-content-holder">
+                                            <h4 class="member-name">Stitch</h4>
+                                            <!-- <p class="member-position">LEAD DESIGNER</p> -->
+                                            <div class="member-content">
+                                                A person with strong experience in streaming strategy and promotions. Working with a lot of influencers and curators across streaming platforms. Working with artists, labels, and managers An individual with an unresting passion for music and artist development, whose goal is to bring fans and the industry together. Has a vast music industry network with a couple of years of operating professionalism. I'm a little bit of pop and a whole lot of Indian HipHop. Started my own event management firm 'WILDIN' last year, and curated two successful interdisciplinary art shows.<br>
+                                            </div>
+                                        </div>
+                                        <div class="member-image-holder">
+                                            <img src="demo-images/about_img_01.jpg" alt="">
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
 
-Delhi artists also held their own at the event as acts like Pho, Oof, YKSGOD, and Shinigxmi had people singing along to their beats. The organizer of this event, Abhijeet Singh, popularly known as Stitch is inspired and excited more than ever to curate more such events and offer new and upcoming artists a stage that they deserve. This year, Wildin is planning to do events in other cities such as Pune, Bangalore, and Mumbai. commodo. Duis eleifend nulla at elit aliquet, vitae dignissim tellus pharetra. Duis eget molestie sem. Donec quis laoreet purus, nec facilisis erat. In ullamcorper lacinia libero non volutpat. Mauris porta suscipit sapien quis congue. Maecenas urna quam, commodo ut lacus non, luctus auctor lorem. Ut eu var
-        </p>
-      </div>
-    </div>
-    <br>
+                                    <li>
+                                        <div class="member-content-holder">
+                                            <h4 class="member-name">John Doe</h4>
+                                            <p class="member-position">SEO MASTER</p>
+                                            <div class="member-content">
+                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
+                                            </div>
+                                        </div>
+                                        <div class="member-image-holder">
+                                            <img src="demo-images/about_img_02.jpg" alt="">
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
 
-</div>
-<!-- Blog Ends Here -->
-<!-- Contact Starts Here -->
-<div class="contact-wrapper" id="contact">
-  <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Contact Us.</h2>
-  <h3 class="text-shadow font-bold text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">Stitch</h3>
-  <h3 class="text-shadow font-thin text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">connectwildin@gmail.com</h3>
-  <br>
-  <h3 class="text-shadow font-thin text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">+91 70428 86708</h3>
-  <br>
-  <div class="p-10">
-    <img src="img/artist/facebook.png" class="artist-facebook flex inline-flex" alt="" />
-    <img src="img/artist/youtube.png" class="artist-youtube flex inline-flex" alt="" />
-    <img src="img/artist/twitter.png" class="artist-twitter flex inline-flex" alt="" /> 
-  </div>
-</div>
-<!-- Contact Ends Here -->
-<!-- Newsletter Starts Here-->
-<!-- <div class="newsletter-wrapper invisible md:visible">
-  <h3 class="text-shadow font-bold text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">Subscribe to our newsletter</h3>
-  <br>
-  <div class="md:w-md lg:w-lg xl:w-xl">
-    <div class="md:flex mb-4 md:mb-2">
-      <div class="form-outline form-white flex-fill md:mr-1">
-        <input type="text" class="form-control block md:w-full w-1/3 px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formControlEmail0" placeholder="Enter your email" />
-      </div>
-          <a href="#!" type="button" class="flex inline-flex inline-block px-7 py-3 bg-black text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-yellow-700 hover:shadow-lg focus:bg-yellow-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-800 active:shadow-lg transition duration-150 ease-in-out md:ml-2 border-solid border-2 border-white notify-button">Notify me</a>
-    </div>
-</div> -->
-<!-- Newsletter Ends Here -->
-<style>
-.navbar{
-  z-index: 10;
-}
-.mobile-menu {
-    position: absolute;
-    right:0;
-    top: 0;
-    padding-top: 10vh;
-    z-index: -1;
-    height: 100vh;
-}
-.hero-image {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: -1;
-    height: 100%;
-}
-.text-shadow{
-    text-shadow: 5px 5px 20px black;
-}
-.gallery-image{
-    width: 40rem;
-    height: 30rem;
-    border-radius: 1rem;
-}
-.arrow{
-  height: 8vh;
-  padding: 1vh;
-}
-.arrow-wrapper{
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
-.gallery-wrapper{
-  position: relative;
-  top: 10vh;
-  z-index: -1;
-}
-.gallery-images-wrapper{
-  position: relative;
-  /* z-index: -1; */
-  top: 10vh;
-}
-.shop-item-wrapper{
-  position: relative;
-  z-index: -1;
-  height: 50vh;
-  border: 3px solid white;
-  border-radius: 2vh;
-  margin: 4vh;
-}
-.shop-item-wrapper-wrapper{
-  padding: 3vw;
-}
-.shop-wrapper{
-  position: relative;
-  top: 10vh;
-  z-index: -1;
-}
-.shop-image{
-  height: 70%;
-  width: 100%;
-  position:relative;
-}
-.artists-wrapper{
-  position: relative;
-  top: 10vh;
-  z-index: -1;
-}
-.artist-portfolio-wrapper{
-  position: relative;
-  left: 2.5vw;
-  z-index: -1;
-  width: 95vw;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border: 2px solid white;
-  border-radius: 1rem;
-}
-.artist-portfolio-wrapper-2{
-  position: relative;
-  left: 2.5vw;
-  z-index: -1;
-  width: 95vw;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border: 2px solid white;
-  border-radius: 1rem;
-}
-.artist-left-wrapper{
-  position: relative;
-  top: 0;
-  padding: auto;
-  z-index: -1;
-}
-.artist-image{
-  position: relative;
-  z-index: -1;
-  /* top: 5rem; */
-  left: 1vw;
-  height: 20rem;
-  border-radius: 1rem;
-}
-.artist-facebook{
-  position: relative;
-  z-index: -1;
-  height: 2rem;
-}
-.artist-youtube{
-  position: relative;
-  z-index: -1;
-  height: 2rem;
-}
-.artist-twitter{
-  position: relative;
-  z-index: -1;
-  height: 2rem;
-}
-.artist-blog{
-  position: relative;
-  z-index: -1;
-  padding: 10vh;
-  width: 100%;
-}
-.contact-wrapper{
-  position: relative;
-  top: 10vh;
-  height: 100vh;
-  z-index: -1;
-}
-.newsletter-wrapper{
-  position: relative;
-  height: 100vh;
-  z-index: -1;
-}
-.form-outline{
-  position: relative;
-  left: 5vw;
-}
-.notify-button{
-  position: relative;
-  left: 5vw;
-}
-.blog-wrapper{
-  position: relative;
-  top: 20vh;
-  height: 100vh;
-  z-index: -1;
-}
-.blog-post-content-wrapper{
-  position: relative;
-  left: 2.5vw;
-  z-index: -1;
-  padding: 2rem;
-  width: 95vw;
-  border: 2px solid white;
-  border-radius: 1rem;
-}
-</style>
-</body>
+                                    <li>
+                                        <div class="member-content-holder">
+                                            <h4 class="member-name">John Doe</h4>
+                                            <p class="member-position">PSD GURU</p>
+                                            <div class="member-content">
+                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
+                                            </div>
+                                        </div>
+                                        <div class="member-image-holder">
+                                            <img src="demo-images/about_img_03.jpg" alt="">
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>   <!-- end full-width div -->
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+        <!-- News -->
+       
+        <!-- Contact -->
+        <div id="contact" class="section">
+            <div class="block content-1170 center-relative">
+                <div class="section-title-holder left">
+                    <div class="section-num">
+                        <span>
+                            03
+                        </span>
+                    </div>
+                    <h2 class="entry-title">Contact</h2>
+                </div>
+                <div class="section-content-holder right">
+                    <div class="content-wrapper">
+                        <!-- <div class="one_half "> -->
+                            <p>Please contact Wildin' on Email at <a href=mailto:connectwildin@gmail.com>connectwildin@gmail.com</a> and on phone at <a href="tel:+917042886708">+91 70428 86708</a></p>
+                            <br>
+                        <!-- </div> -->
+                
+                        <div class="clear"></div>
+                    </div>
+                    <div class="full-width">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224091.40762649613!2d76.95317979802813!3d28.64689345195395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1654338937559!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="footer content-1170 center-relative">
+                <ul>
+                    <li class="copyright-footer">
+                        © 2021 All rights reserved. | Designed by <a href="https://instagram.com/gamicbyte" target="_blank">Gamicbyte</a>
+                    </li>
+                    <!-- <li class="social-footer">
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-behance"></span></a>
+                        <a href="#"><span class="fa fa-dribbble"></span></a>
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-rss"></span></a>
+                    </li> -->
+                </ul>
+            </div>
+        </footer>
+
+
+        <!--Load JavaScript-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type='text/javascript' src='js/jquery.sticky-kit.min.js'></script>
+        <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+        <script type='text/javascript' src='js/jquery.sticky.js'></script>
+        <script type='text/javascript' src='js/jquery.dryMenu.js'></script>
+        <script type='text/javascript' src='js/isotope.pkgd.js'></script>
+        <script type='text/javascript' src='js/jquery.carouFredSel-6.2.0-packed.js'></script>
+        <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+        <script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
+        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+        <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+        <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+        <script type='text/javascript' src='js/main.js'></script>
+    </body>
 </html>
